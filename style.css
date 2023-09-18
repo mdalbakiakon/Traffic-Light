@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(24, 24, 36);
+    font-family: Pacifico; 
+    color: aliceblue;
+    font-size: 40px; 
+    font-weight: 100; 
+}
+
+h1{
+    position: relative;
+    top:20px;
+    color: rgb(248, 239, 228);
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 0px 0px 80px black;
+    transition-duration: 1s;
+}
+
+.light-container{
+    border: 3px solid rgb(15, 15, 15);
+    height: 265px;
+    width: 100px;
+    position: relative;
+    top: 82.5px;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow:5px 8px 25px black;
+}
+
+.light #redlight{
+    margin: 0 auto;
+    border: 2px solid antiquewhite;
+    height: 80px;
+    width: 80px;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    top:-180px;
+    box-shadow: 0px 0px 20px antiquewhite;
+}
+
+.light #yellowlight{
+    margin: 0 auto;
+    border: 2px solid antiquewhite;
+    height: 80px;
+    width: 80px;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    top:-180px;
+    box-shadow: 0px 0px 20px antiquewhite;
+}
+
+.light #greenlight{
+    margin: 0 auto;
+    border: 2px solid antiquewhite;
+    height: 80px;
+    width: 80px;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    top:-180px;
+    box-shadow: 0px 0px 20px antiquewhite;
+}
+
+
+.container{
+    background-color:rgba(27,27,37,0.3);
+    border: 1px solid rgb(36, 35, 35);
+    position: relative;
+    top:-80px;
+    text-align: center;
+    padding: 15px;
+    width: 140px;
+    height:240px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow:5px 8px 25px black;
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 6px;    
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+}
+
+#red a{
+    border:1px solid hsl(0, 100%, 50%);
+}
+#yellow a{
+    border:1px solid hsl(50, 100%, 50%);
+}
+#green a{
+    border:1px solid hsl(100, 100%, 50%);
+}
+
+#red a:hover{
+    background-color:hsl(0, 100%, 50%);
+    color: #000;
+    border: hsl(0, 100%, 50%);
+    transition-duration: 1s;
+}
+
+#yellow a:hover{
+    background-color: hsl(50, 100%, 50%);
+    color: #000;
+    border: hsl(50, 100%, 50%);
+    transition-duration: 1s;
+}
+#green a:hover{
+    background-color: hsl(100, 100%, 50%);
+    color: #000;
+    border: hsl(100, 100%, 50%);
+    transition-duration: 1s;
+}
+
+#red a:active{
+    box-shadow: 0px 0px 10px black;
+}
+
+#yellow a:active{
+    box-shadow: 0px 0px 10px black;
+}
+
+#green a:active{
+    box-shadow: 0px 0px 10px black;
+}
