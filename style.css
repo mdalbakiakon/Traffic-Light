@@ -4,11 +4,11 @@
 }
 
 body{
-    background-color: rgb(24, 24, 36);
+    background-image:-webkit-linear-gradient( rgb(9, 9, 14),rgb(9, 9, 14),rgb(26, 26, 37), rgb(107, 105, 103),rgb(175, 175, 175));
     font-family: Pacifico; 
     color: aliceblue;
     font-size: 40px; 
-    font-weight: 100; 
+    font-weight: 100;
 }
 
 h1{
@@ -22,7 +22,7 @@ h1{
 }
 
 .light-container{
-    border: 3px solid rgb(15, 15, 15);
+    border: 3px solid rgb(39, 39, 39);
     height: 265px;
     width: 100px;
     position: relative;
@@ -35,7 +35,7 @@ h1{
 
 .light #redlight{
     margin: 0 auto;
-    border: 2px solid antiquewhite;
+    border: 2px solid hsl(0, 100%, 50%);
     height: 80px;
     width: 80px;
     align-items: center;
@@ -47,7 +47,7 @@ h1{
 
 .light #yellowlight{
     margin: 0 auto;
-    border: 2px solid antiquewhite;
+    border: 2px solid hsl(50, 100%, 50%);
     height: 80px;
     width: 80px;
     align-items: center;
@@ -59,7 +59,7 @@ h1{
 
 .light #greenlight{
     margin: 0 auto;
-    border: 2px solid antiquewhite;
+    border: 2px solid hsl(100, 100%, 50%);
     height: 80px;
     width: 80px;
     align-items: center;
@@ -71,8 +71,8 @@ h1{
 
 
 .container{
-    background-color:rgba(27,27,37,0.3);
-    border: 1px solid rgb(36, 35, 35);
+    background-color:rgb(27,27,37);
+    border: 1px solid rgb(53, 53, 53);
     position: relative;
     top:-80px;
     text-align: center;
@@ -81,7 +81,7 @@ h1{
     height:240px;
     margin: 0 auto;
     border-radius: 20px;
-    box-shadow:5px 8px 25px black;
+    box-shadow:2px 5px 15px black;
 }
 
 ul{
