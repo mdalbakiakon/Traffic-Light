@@ -26,7 +26,7 @@ h1{
     height: 265px;
     width: 100px;
     position: relative;
-    top: 82.5px;
+    top: 80px;
     margin: 0 auto;
     align-items: center;
     border-radius: 15px;
@@ -35,7 +35,8 @@ h1{
 
 .light #redlight{
     margin: 0 auto;
-    border: 2px solid hsl(0, 100%, 50%);
+    margin-bottom: 5px;
+    border: 0px solid black;
     height: 80px;
     width: 80px;
     align-items: center;
@@ -43,12 +44,12 @@ h1{
     position: relative;
     top:-180px;
     box-shadow: 0px 0px 20px antiquewhite;
-    transition: 450ms;
 }
 
 .light #yellowlight{
     margin: 0 auto;
-    border: 2px solid hsl(50, 100%, 50%);
+    margin-bottom: 5px;
+    border: 0px solid black;
     height: 80px;
     width: 80px;
     align-items: center;
@@ -56,12 +57,12 @@ h1{
     position: relative;
     top:-180px;
     box-shadow: 0px 0px 20px antiquewhite;
-    transition: 450ms;
 }
 
 .light #greenlight{
     margin: 0 auto;
-    border: 2px solid hsl(100, 100%, 50%);
+    margin-bottom: 5px;
+    border: 0px solid black;
     height: 80px;
     width: 80px;
     align-items: center;
@@ -69,7 +70,6 @@ h1{
     position: relative;
     top:-180px;
     box-shadow: 0px 0px 20px antiquewhite;
-    transition: 450ms;
 }
 
 
@@ -135,19 +135,40 @@ ul{
 }
 
 .RL:active{
+    position: relative;
+    top:1px;
+    transition: 150ms;
     box-shadow: 0px 0px 10px black;
 }
 
 .YL:active{
+    position: relative;
+    top:1px;
+    transition: 150ms;
     box-shadow: 0px 0px 10px black;
 }
 
 .GL:active{
+    position: relative;
+    top:1px;
+    transition: 150ms;
     box-shadow: 0px 0px 10px black;
 }
 
-.RL:checked + #redlight{
-    background-color: red;
+#redlight::before{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.RL:checked + #redlight::before{
+    background-color: hsl(0, 100%, 50%);
+    border: 1px solid rgb(207, 0, 0);
+    box-shadow: 0px 0px 30px hsl(0, 100%, 50%);
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 input{
