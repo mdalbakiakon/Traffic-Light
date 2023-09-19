@@ -43,6 +43,7 @@ h1{
     position: relative;
     top:-180px;
     box-shadow: 0px 0px 20px antiquewhite;
+    transition: 450ms;
 }
 
 .light #yellowlight{
@@ -55,6 +56,7 @@ h1{
     position: relative;
     top:-180px;
     box-shadow: 0px 0px 20px antiquewhite;
+    transition: 450ms;
 }
 
 .light #greenlight{
@@ -67,6 +69,7 @@ h1{
     position: relative;
     top:-180px;
     box-shadow: 0px 0px 20px antiquewhite;
+    transition: 450ms;
 }
 
 
@@ -88,7 +91,7 @@ ul{
     list-style: none;
 }
 
-li a{
+.RL,.YL,.GL{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 auto;
     font-size: 25px;
@@ -100,44 +103,53 @@ li a{
     box-shadow: 5px 5px 10px black;
 }
 
-#red a{
+.RL{
     border:1px solid hsl(0, 100%, 50%);
 }
-#yellow a{
+.YL{
     border:1px solid hsl(50, 100%, 50%);
 }
-#green a{
+.GL{
     border:1px solid hsl(100, 100%, 50%);
 }
 
-#red a:hover{
+.RL:hover{
     background-color:hsl(0, 100%, 50%);
     color: #000;
     border: hsl(0, 100%, 50%);
-    transition: 500ms;
+    transition: 450ms;
 }
 
-#yellow a:hover{
+.YL:hover{
     background-color: hsl(50, 100%, 50%);
     color: #000;
     border: hsl(50, 100%, 50%);
-    transition: 500ms;
+    transition: 450ms;
 }
-#green a:hover{
+
+.GL:hover{
     background-color: hsl(100, 100%, 50%);
     color: #000;
     border: hsl(100, 100%, 50%);
-    transition: 500ms;
+    transition: 450ms;
 }
 
-#red a:active{
+.RL:active{
     box-shadow: 0px 0px 10px black;
 }
 
-#yellow a:active{
+.YL:active{
     box-shadow: 0px 0px 10px black;
 }
 
-#green a:active{
+.GL:active{
     box-shadow: 0px 0px 10px black;
+}
+
+.RL:checked + #redlight{
+    background-color: red;
+}
+
+input{
+    display: none;
 }
