@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image:-webkit-linear-gradient( rgb(9, 9, 14),rgb(9, 9, 14),rgb(26, 26, 37), rgb(107, 105, 103),rgb(175, 175, 175));
+    background:-webkit-linear-gradient( rgb(9, 9, 14),rgb(9, 9, 14),rgb(26, 26, 37), rgb(107, 105, 103),rgb(175, 175, 175));
     font-family: Pacifico; 
     color: aliceblue;
     font-size: 40px; 
